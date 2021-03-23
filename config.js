@@ -71,7 +71,7 @@ module.exports = {
     I'm not sure if Cookies Laws apply to Local Storage as well, although I suppose it makes sense if they do.
     NOTE: Enabling this will automatically push 'cookiepolicy' to pages array above.
   */
-  cookiePolicy: false,
+  cookiePolicy: true,
 
   /*
     This can be either 'blacklist' or 'whitelist', which should be self-explanatory.
@@ -115,7 +115,7 @@ module.exports = {
   /*
     Show hash of the current git commit in homepage.
   */
-  showGitHash: false,
+  showGitHash: true,
 
   /*
     Path to error pages. Only 404 and 500 will be used.
@@ -361,7 +361,7 @@ module.exports = {
       Example: 'moderator' = moderators, admins & superadmins.
     */
     scan: {
-      enabled: false,
+      enabled: true,
       groupBypass: 'admin', // Other group names in controllers/permissionController.js
       whitelistExtensions: null, /* [
         '.webp',
